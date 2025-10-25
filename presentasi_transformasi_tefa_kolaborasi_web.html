@@ -1,0 +1,204 @@
+<!--
+File: index.html
+Deskripsi: Versi web presentasi "Transformasi TEFA Kolaborasi di SMKN 3 Soppeng".
+Instruksi singkat:
+1. Ganti file logo pada folder `assets/` dengan nama `logo_smkn3soppeng.png` (atau ubah path di <img> jika berbeda).
+2. Struktur repo yang disarankan:
+   - index.html
+   - assets/
+     - logo_smkn3soppeng.png
+     - foto1.jpg (opsional)
+3. Upload seluruh isi repo ke GitHub dan aktifkan GitHub Pages (branch `main` / folder `/ (root)`).
+-->
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Transformasi TEFA Kolaborasi - SMKN 3 Soppeng</title>
+  <meta name="description" content="Presentasi: Transformasi TEFA Kolaborasi di SMKN 3 Soppeng — Lomba Apresiasi GTK" />
+  <style>
+    :root{
+      --bg:#fbfdfb; /* lembut putih kehijauan */
+      --card:#ffffff;
+      --accent:#7fb3a7; /* hijau lembut */
+      --muted:#6b7b74;
+      --text:#173737;
+      --shadow: 0 6px 18px rgba(19,35,30,0.06);
+      --radius:18px;
+      --maxw:1000px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#f7fbfa);color:var(--text)}
+    .wrap{max-width:var(--maxw);margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:84px;height:84px;background:#fff;border-radius:14px;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .logo img{width:100%;height:100%;object-fit:contain}
+    h1{font-size:20px;margin:0}
+    .meta{color:var(--muted);font-size:13px}
+
+    /* slide container */
+    .slides{margin-top:22px;background:var(--card);border-radius:20px;padding:28px;box-shadow:var(--shadow)}
+    .slide{display:none;padding:8px 6px}
+    .slide.active{display:block}
+    .slide h2{margin-top:0;color:var(--accent)}
+    .controls{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
+    .dots{display:flex;gap:8px}
+    .dot{width:10px;height:10px;border-radius:50%;background:#e6efe9}
+    .dot.active{background:var(--accent)}
+
+    /* content styles */
+    .cols{display:grid;grid-template-columns:1fr 330px;gap:20px}
+    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:0 8px 30px rgba(20,40,36,0.04)}
+    .list{margin:0;padding-left:18px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media (max-width:880px){.cols{grid-template-columns:1fr}.logo{width:64px;height:64px}}
+
+    /* small decorative */
+    .tagline{font-weight:600;color:var(--muted)}
+    .btn{background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:10px;cursor:pointer;box-shadow:0 6px 18px rgba(127,179,167,0.18)}
+    .mutebtn{background:transparent;border:1px solid #e0e9e4;padding:8px 12px;border-radius:10px;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="wrap" role="main">
+    <header>
+      <div class="logo" aria-hidden="true">
+        <!-- Ganti file assets/logo_smkn3soppeng.png dengan logo Anda -->
+        <img src="assets/logo_smkn3soppeng.png" alt="Logo SMKN 3 Soppeng" />
+      </div>
+      <div>
+        <h1>Transformasi TEFA Kolaborasi di SMKN 3 Soppeng</h1>
+        <div class="meta">Lomba Apresiasi GTK • SMKN 3 Soppeng</div>
+      </div>
+      <div style="margin-left:auto;text-align:right">
+        <div class="tagline">Menguatkan kolaborasi — Berbasis data — Siap untuk masa depan</div>
+      </div>
+    </header>
+
+    <section class="slides" aria-label="Presentasi">
+      <!-- Slide 1: Pendahuluan -->
+      <article class="slide active" id="s0" tabindex="0">
+        <h2>Pendahuluan</h2>
+        <div class="cols">
+          <div>
+            <div class="card">
+              <h3>Konteks: SMKN 3 Soppeng & TEFA</h3>
+              <p>SMKN 3 Soppeng adalah pusat pendidikan vokasi yang fokus pada kompetensi teknik dan industri. Melalui program TEFA (Teaching, Education, and Faculty Alignment), sekolah menguatkan hubungan antara pembelajaran dan kebutuhan industri lokal, meningkatkan relevansi kurikulum dan kompetensi lulusan.</p>
+              <p>TEFA di SMKN 3 Soppeng dikembangkan dengan prinsip kolaborasi antar pemangku kepentingan: guru, industri mitra, pemerintahan daerah, dan murid. Transformasi ini menekankan pembelajaran berorientasi proyek, penilaian autentik, serta penggunaan data untuk pengambilan keputusan.</p>
+            </div>
+          </div>
+
+          <aside>
+            <div class="card">
+              <h4>Fakta singkat</h4>
+              <ul class="list">
+                <li>Sekolah: SMKN 3 Soppeng</li>
+                <li>Program: TEFA Kolaborasi</li>
+                <li>Tujuan: Sinergi sekolah–industri</li>
+                <li>Output: Lulusan siap kerja</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </article>
+
+      <!-- Slide 2: Transformasi & Kolaborasi -->
+      <article class="slide" id="s1">
+        <h2>Transformasi dan Kolaborasi</h2>
+        <div class="card">
+          <p>Transformasi TEFA di SMKN 3 Soppeng berfokus pada: penguatan kurikulum berbasis kebutuhan industri, praktik kerja nyata di perusahaan mitra, serta pembentukan forum kolaborasi untuk perencanaan bersama. Kolaborasi melibatkan:</p>
+          <ul class="list">
+            <li>Kerjasama kurikulum dan magang dengan industri lokal</li>
+            <li>Pembinaan guru melalui pelatihan bersama mitra</li>
+            <li>Proyek kolaboratif antar kelas yang menghasilkan produk nyata</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Slide 3: Inovasi Digital -->
+      <article class="slide" id="s2">
+        <h2>Inovasi Digital dan Sistem Data</h2>
+        <div class="card">
+          <p>Inovasi digital mendukung TEFA melalui sistem pengumpulan dan analisis data kompetensi siswa, platform manajemen magang, serta dashboard monitoring hasil kolaborasi. Manfaatnya:</p>
+          <ul class="list">
+            <li>Mempermudah pemetaan kompetensi</li>
+            <li>Meningkatkan transparansi hasil magang dan asesmen</li>
+            <li>Mempercepat umpan balik antara sekolah dan industri</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Slide 4: Dampak & Pencapaian -->
+      <article class="slide" id="s3">
+        <h2>Dampak dan Pencapaian</h2>
+        <div class="card">
+          <p>Beberapa pencapaian nyata setelah implementasi TEFA:</p>
+          <ul class="list">
+            <li>Persentase lulusan terserap industri meningkat</li>
+            <li>Adanya modul pelatihan bersama yang disusun mitra industri</li>
+            <li>Digital dashboard untuk pemantauan perkembangan siswa</li>
+          </ul>
+          <p>Selain kuantitas, ada peningkatan kualitas: keterampilan kerja nyata, sikap profesional, dan kesiapan mengikuti standar industri.</p>
+        </div>
+      </article>
+
+      <!-- Slide 5: Penutup / Tagline -->
+      <article class="slide" id="s4">
+        <h2>Penutup</h2>
+        <div class="card">
+          <p>Transformasi TEFA menunjukkan bahwa kolaborasi terstruktur antara sekolah dan industri serta pemanfaatan data digital adalah kunci untuk menghasilkan lulusan yang kompeten dan siap kerja. SMKN 3 Soppeng berkomitmen meneruskan inovasi ini sebagai strategi pendidikan vokasi yang berkelanjutan.</p>
+          <p style="font-weight:700;margin-top:12px">Tagline final:</p>
+          <p style="font-size:18px">"Menguatkan Kolaborasi — Berbasis Data — Siap Menghadapi Industri"</p>
+        </div>
+      </article>
+
+      <div class="controls">
+        <div>
+          <button class="mutebtn" id="prev">◀ Sebelumnya</button>
+          <button class="btn" id="next">Berikutnya ▶</button>
+        </div>
+        <div class="dots" id="dots" aria-hidden="true"></div>
+      </div>
+
+      <footer>
+        <div>SMKN 3 Soppeng</div>
+        <div>Made for: Lomba Apresiasi GTK</div>
+      </footer>
+    </section>
+  </div>
+
+  <script>
+    // Simple slide controller
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    const dotsEl = document.getElementById('dots');
+    let idx = 0;
+    function renderDots(){
+      dotsEl.innerHTML = '';
+      slides.forEach((s,i)=>{
+        const d = document.createElement('div');
+        d.className='dot'+(i===idx? ' active':'');
+        d.addEventListener('click',()=>{goto(i)});
+        dotsEl.appendChild(d);
+      })
+    }
+    function goto(i){
+      slides[idx].classList.remove('active');
+      idx = (i+slides.length)%slides.length;
+      slides[idx].classList.add('active');
+      renderDots();
+      document.getElementById('s'+idx).focus();
+    }
+    document.getElementById('next').addEventListener('click',()=>goto(idx+1));
+    document.getElementById('prev').addEventListener('click',()=>goto(idx-1));
+    document.addEventListener('keydown',e=>{
+      if(e.key==='ArrowRight') goto(idx+1);
+      if(e.key==='ArrowLeft') goto(idx-1);
+    });
+    renderDots();
+  </script>
+</body>
+</html>
